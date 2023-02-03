@@ -141,7 +141,7 @@ h4 {
     accent-color: green;
   }
   input[id='expense']{
-    accent-color: red;
+    accent-color: rgb(86, 9, 9);
   }
   .btn {
     cursor: pointer;
