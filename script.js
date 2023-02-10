@@ -24,3 +24,26 @@ const dummyTransactions = [
       notification.classList.remove("show");
     }, 2000);
   }
+
+  function generateID() {
+    return Math.floor(Math.random() * 100000000);
+  }
+
+  function addTransaction(e) {
+    e.preventDefault();
+    if (text.value.trim() === "" || amount.value.trim() === "") {
+      showNotification();
+    } else {
+      const transaction = {
+        id: generateID(),
+        text: text.value,
+        amount: +amount.value,
+      };
+      transactions.push(transaction);
+      addTransactionDOM(transaction);
+      updateValues();
+      // updateLocaleStorage();
+      text.value = "";
+      amount.value = "";
+    }
+  }
