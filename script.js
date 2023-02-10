@@ -47,3 +47,53 @@ const dummyTransactions = [
       amount.value = "";
     }
   }
+
+  function addTransactionDOM(transaction) {
+    const sign = transaction.amount < 0 ? "-" : "+";
+    const item = document.createElement("li");
+    item.classList.add(sign === "+" ? "plus" : "minus");
+    item.innerHTML = `
+            ${transaction.text} <span>${sign}${Math.abs(transaction.amount)}</span
+            ><button class="delete-btn" onclick="removeTransaction(${
+              transaction.id
+            })"><i class="fa fa-times"></i></button>
+      `;
+    list.appendChild(item);
+  }
+  
+  function updateValues() {
+    const amounts = transactions.map((transaction) => transaction.amount);
+    const total = amounts
+      .reduce((accumulator, value) => (accumulator += value), 0)
+      .toFixed(2);
+    const income = amounts
+      .filter((value) => value > 0)
+      .reduce((accumulator, value) => (accumulator += value), 0)
+      .toFixed(2);
+    const expense = (
+      amounts
+        .filter((value) => value < 0)
+        .reduce((accumulator, value) => (accumulator += value), 0) * -1
+    ).toFixed(2);
+    balance.innerText = `$${total}`;
+    moneyPlus.innerText = `$${income}`;
+    moneyMinus.innerText = `$${expense}`;
+  }
+  
+  function removeTransaction(id) {
+    transactions = transactions.filter((transaction) => transaction.id !== id);
+    // updateLocaleStorage();
+    init();
+  }
+  
+  // Init
+  function init() {
+    list.innerHTML = "";
+    transactions.forEach(addTransactionDOM);
+    updateValues();
+  }
+  
+  init();
+  
+  form.addEventListener("submit", addTransaction);
+  
