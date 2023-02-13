@@ -78,4 +78,5 @@ function updateValues()
 
   balance.innerText = `$${total}`;
   money_plus.innerText = `$${income}`;
+  money_minus.innerText = `$${expense}`;
   
