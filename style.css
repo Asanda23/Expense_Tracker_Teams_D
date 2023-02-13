@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-color: #13168d;
   --secondary-color: #393a57;
   --ternary-color: #486ba6;
@@ -9,9 +9,9 @@
   ;
   
 
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -25,9 +25,9 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-}
+} */
 
-.header {
+/* .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,22 +37,22 @@ body {
   margin-top: 20px;
   width: 3rem;
   opacity: 0.3;
-}
+} */
 
-.balance-container {
+/* .balance-container {
 
   display: flex;
   justify-content: center;
 
-}
+} */
 
-.header {
+/* .header {
   display: flex;
   justify-content: center;
 
-}
+} */
 
-.contatiner {
+/* .contatiner {
   margin: 30px auto;
   width: 350px;
 }
@@ -63,55 +63,55 @@ h1 {
 
 h2 {
   font-size: 1.17rem;
-}
+} */
 
-.balance {
+/* .balance {
   letter-spacing: 1px;
   margin: 0;
   font-size: 2rem;
-}
+} */
 
-h3 {
-  /* border-bottom: 1px solid var(--border-color); */
+/* h3 {
+   border-bottom: 1px solid var(--border-color); 
   padding-bottom: 10px;
   margin: 40px 0 10px;
-}
+} */
 
-h2,
+/* h2,
 h4 {
   margin: 5px;
   text-transform: uppercase;
-}
+} */
 
-.income-expense-container {
+/* .income-expense-container {
   width: 200px;
   height: rem;
   background-color: var(--border-secondary-color);
   box-shadow: var(--box-shadow);
-  /* padding: 20px; */
+   padding: 20px; 
   margin: 20px 0;
   border-radius: 3px;
   padding: 8px;
   border-radius: 50px 20px;
-  }
+  } */
 
-  .income-expense-container>div {
+  /* .income-expense-container>div {
     flex: 1;
     text-align: center;
-  }
+  } */
 
   /* .income-expense-container>div:first-of-type {
     border-bottom: 1px solid red
   } */
 
-  .money {
+  /* .money {
     font-size: 20px;
     letter-spacing: 1px;
     color: #c0392b;
     
-  }
+  } */
 
-  .money.plus {
+  /* .money.plus {
     color: rgba(8, 66, 18, 0.851)
    
   }
@@ -119,14 +119,14 @@ h4 {
   .money .minus {
     color: red;
    
-  }
+  } */
 
-  label {
+  /* label {
     display: inline-block;
     margin: 10px 0;
-  }
+  } */
 
-  input[type="text"],
+  /* input[type="text"],
   input[type="number"] {
     border: 2px solid rgba(8, 66, 18, 0.851);
     border-radius: 25px;
@@ -135,15 +135,15 @@ h4 {
     width: 100%;
     font-size: 16px;
     border-right:5px solid rgba(8, 66, 18, 0.851);
-  }
+  } */
 
-  input[id='income']{
+  /* input[id='income']{
     accent-color: rgb(43, 240, 43);
   }
   input[id='expense']{
     accent-color: red;
-  }
-  .btn {
+  } */
+  /* .btn {
     cursor: pointer;
     background-color: var(--main-color);
     box-shadow: var(--box-shadow);
@@ -155,9 +155,9 @@ h4 {
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-  }
+  } */
 
-  .list li {
+  /* .list li {
     background-color: var(--border-secondary-color);
     box-shadow: var(--box-shadow);
     color: var(--ternary-color);
@@ -168,9 +168,9 @@ h4 {
     margin: 10px 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-  }
+  } */
 
-  .list li.plus {
+  /* .list li.plus {
     border-left: 5px solid var(--plus-color);
   }
 
@@ -181,8 +181,8 @@ h4 {
   .dualBox {
     display: flex;
     gap: 5px;
-  }
-  .notification-container {
+  } */
+  /* .notification-container {
     background-color: var(--minus-color);
     color: var(--background-secondary-color);
     border-radius: 5px 5px 0 0;
@@ -195,10 +195,10 @@ h4 {
   
   .notification-container.show {
     opacity: 1;
-  }
+  } */
   
-  .notification-container p {
+  /* .notification-container p {
     margin: 0;
-  }
+  } */
   
   
