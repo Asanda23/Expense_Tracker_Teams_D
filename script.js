@@ -77,4 +77,5 @@ function updateValues()
   ).toFixed(2);
 
   balance.innerText = `$${total}`;
+  money_plus.innerText = `$${income}`;
   
