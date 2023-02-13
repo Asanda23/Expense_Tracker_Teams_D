@@ -29,4 +29,5 @@ function addTransaction(e) {
      transactions.push(transaction);
 
      addTransactionDOM(transaction);
-     
+
+     updateValues();
