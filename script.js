@@ -62,3 +62,4 @@ function addTransactionDOM(transaction) {
   }
 // Update the balance, income and expense
 function updateValues()
+  const amounts = transactions.map(transaction => transaction.amount);
