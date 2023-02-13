@@ -38,7 +38,10 @@ body {
   display: flex;
     gap: 5px;
 }
-
+h1{
+  letter-spacing: 1px;
+  margin: 0;
+}
 
 /* .balance-container {
 
