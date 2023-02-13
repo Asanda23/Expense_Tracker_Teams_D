@@ -35,4 +35,5 @@ function addTransaction(e) {
      updateLocalStorage();
 
      text.value = '';
+     amount.value = '';
 }
