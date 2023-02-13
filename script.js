@@ -26,4 +26,7 @@ function addTransaction(e) {
         amount: +amount.value
     };
 
-    transactions.push(transaction);
+     transactions.push(transaction);
+
+     addTransactionDOM(transaction);
+     
