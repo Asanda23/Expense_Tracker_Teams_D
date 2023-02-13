@@ -92,7 +92,7 @@ const dummyTransactions = [
     transactions.forEach(addTransactionDOM);
     updateValues();
   }
-  
+  +
   init();
   
   form.addEventListener("submit", addTransaction);
