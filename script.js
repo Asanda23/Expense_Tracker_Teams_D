@@ -25,9 +25,12 @@ function addTransaction(e) {
         text: text.value,
         amount: +amount.value
     };
-
+  }
      transactions.push(transaction);
 
      addTransactionDOM(transaction);
 
      updateValues();
+
+     updateLocalStorage();
+}
