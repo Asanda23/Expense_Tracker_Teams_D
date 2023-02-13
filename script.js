@@ -43,7 +43,7 @@ function generateID() {
 }
 
 // Add transactions to DOM list
-function addTransactionDOM(transaction) 
+function addTransactionDOM(transaction) {
   // Get sign
   const sign = transaction.amount < 0 ? '-' : '+';
 
@@ -59,3 +59,6 @@ function addTransactionDOM(transaction)
         })">x</button>
   `;
   list.appendChild(item);
+  }
+// Update the balance, income and expense
+function updateValues()
