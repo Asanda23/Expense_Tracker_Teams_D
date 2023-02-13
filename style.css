@@ -99,6 +99,16 @@ input[type='number'] {
   padding: 0;
   margin-bottom: 40px;
 }
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
 /* .balance-container {
 
   display: flex;
