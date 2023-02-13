@@ -54,6 +54,11 @@ h4 {
 .inc-exp-container > div:first-of-type {
   border-right: 1px solid #dedede;
 }
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
 /* .balance-container {
 
   display: flex;
