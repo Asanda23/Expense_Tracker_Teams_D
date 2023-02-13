@@ -38,4 +38,6 @@ function addTransaction(e) {
      amount.value = '';
   }
 // Generate random ID
-function generateID() 
+function generateID() {
+  return Math.floor(Math.random() * 100000000);
+}
