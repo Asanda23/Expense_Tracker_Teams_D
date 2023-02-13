@@ -109,6 +109,9 @@ input[type='number'] {
   padding: 10px;
   margin: 10px 0;
 }
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
 /* .balance-container {
 
   display: flex;
