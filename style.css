@@ -16,10 +16,11 @@ body {
 }
 header {
   /* background-color: #2ecc71; */
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   text-align: center;
   height: 75px;
   width: 100%;
+  text-shadow: 2px 2px red;
 }
 .container {
   margin: 30px auto;
