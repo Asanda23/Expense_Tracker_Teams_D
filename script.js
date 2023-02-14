@@ -85,3 +85,10 @@ function removeTransaction(id) {
 function updateLocalStorage() {
     localStorage.setItem('transactions', JSON.stringify(transactions));
 }
+
+// Init app
+function init() {
+    list.innerHTML = '';
+    transactions.forEach(addTransactionDOM);
+    updateValues();
+}
