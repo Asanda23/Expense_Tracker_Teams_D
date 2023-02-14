@@ -73,12 +73,13 @@ label {
 }
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
+  border: 2px solid rgba(8,66,18,0.851);
   border-radius: 25px;
   display: block;
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  border-right: 5px solid rgba(8,66,18,0.851);
 }
 .btn {
   cursor: pointer;
