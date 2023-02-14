@@ -20,7 +20,7 @@ header {
   text-align: center;
   height: 5px;
   width: 100%;
-  /* text-shadow: 2px 2px red; */
+  font-size: 15px;
 }
 .container {
   margin: 30px auto;
@@ -82,7 +82,7 @@ input[type='number'] {
 }
 .btn {
   cursor: pointer;
-  background-color: #0366D6;
+  background-color: blue;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
