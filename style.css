@@ -18,20 +18,20 @@ header {
   /* background-color: #2ecc71; */
   /* color: #FFFFFF; */
   text-align: center;
-  height: 75px;
+  height: 5px;
   width: 100%;
-  text-shadow: 2px 2px red;
+  /* text-shadow: 2px 2px red; */
 }
 .container {
   margin: 30px auto;
   width: 350px;
+  
 }
 h1 {
   letter-spacing: 1px;
   margin: 0;
 }
 h3 {
-  border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
@@ -61,8 +61,7 @@ h2 {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
-}
-.money.plus {
+
   color: #2ecc71;
 }
 .money.minus {
@@ -75,7 +74,7 @@ label {
 input[type='text'],
 input[type='number'] {
   border: 1px solid #dedede;
-  border-radius: 5px;
+  border-radius: 25px;
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -111,6 +110,7 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  
 }
 .list li.plus {
   border-right: 5px solid #2ecc71;
@@ -136,6 +136,7 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
 /* .balance-container {
 
   display: flex;
