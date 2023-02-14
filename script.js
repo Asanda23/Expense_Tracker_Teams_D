@@ -41,7 +41,7 @@ function generateID() {
 
 // Add transactions to DOM list
 function addTransactionDOM(transaction) {
-    
+
     // Get sign
     const sign = transaction.amount < 0 ? '-' : '+';
     const item = document.createElement('li');
@@ -55,4 +55,28 @@ function addTransactionDOM(transaction) {
         })">x</button>
   `;
     list.appendChild(item);
+}
+
+// Update the balance, income and expense
+function updateValues() {
+    const amounts = transactions.map(transaction => transaction.amount);
+    const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
+    const income = amounts
+        .filter(item => item > 0)
+        .reduce((acc, item) => (acc += item), 0)
+        .toFixed(2);
+    const expense = (
+        amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) *
+        -1
+    ).toFixed(2);
+    balance.innerText = `$${total}`;
+    money_plus.innerText = `$${income}`;
+    money_minus.innerText = `$${expense}`;
+}
+
+// Remove transaction by ID
+function removeTransaction(id) {
+    transactions = transactions.filter(transaction => transaction.id !== id);
+    updateLocalStorage();
+    init();
 }
