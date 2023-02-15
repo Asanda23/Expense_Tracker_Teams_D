@@ -27,7 +27,7 @@ header {
   width: 350px; 
 }
 .inc-exp-class{
-  gap: 5px;
+  gap: 7px;
    display: flex;
 }
 h1 {
@@ -46,12 +46,13 @@ h2 {
 }
 .inc-exp-container {
   background-color: #fff;
-  border-radius: 45px;
+  border-radius: 200px;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 10px 100px / 120px;
 } 
 .inc-exp-container > div {
   flex: 1;
@@ -59,13 +60,14 @@ h2 {
 }
 .inc-exp-container > div:first-of-type {
   border-right: 1px solid #dedede;
+  
 }
 .money {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 1px;
   margin: 5px 0;
-
-  color: #2ecc71;
+  
+  color: #15e16a;
   
 }
 .money.minus {
