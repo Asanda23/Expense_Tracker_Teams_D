@@ -71,6 +71,12 @@ label {
   display: inline-block;
   margin: 10px 0;
 }
+input[id='income']{
+    accent-color: rgb(43, 240, 43);
+  }
+  input[id='expense']{
+    accent-color: red;
+  }
 input[type='text'],
 input[type='number'] {
   border: 2px solid rgba(8,66,18,0.851);
