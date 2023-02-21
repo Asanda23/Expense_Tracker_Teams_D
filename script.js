@@ -9,6 +9,7 @@ const amount = document.getElementById('amount');
 const localStorageTransactions = JSON.parse(
     localStorage.getItem('transactions')
 );
+ 
 
 let transactions =
     localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
@@ -23,7 +24,8 @@ function addTransaction(e) {
         const transaction = {
             id: generateID(),
             text: text.value,
-            amount: +amount.value
+            amount: +amount.value++
+            
         };
 
         transactions.push(transaction);
@@ -55,7 +57,7 @@ function addTransactionDOM(transaction) {
     item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
 
     item.innerHTML = `
-    ${transaction.text} <span>${sign}${Math.abs(
+    ${transaction.text} <span>${sign}${(
         transaction.amount
     )}</span> <button class="delete-btn" onclick="removeTransaction(${transaction.id
         })">x</button>
